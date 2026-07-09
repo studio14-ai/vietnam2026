@@ -1,264 +1,40 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="UTF-8">
-<title>Vietnam Trip 2026 Itinerary</title>
-<style>
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-    background: #f4f2ee;
-    color: #2b2b2b;
-  }
-  .hero {
-    background: linear-gradient(rgba(10,30,30,0.45), rgba(10,30,30,0.55)), url('https://images.unsplash.com/photo-1521993117367-b7f70ccd029d?q=80&w=3240&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
-    color: white;
-    padding: 120px 20px 50px;
-    text-align: center;
-  }
-  .hero h1 { margin: 0 0 8px; font-size: 2.4em; letter-spacing: 0.5px; text-shadow: 0 2px 10px rgba(0,0,0,0.4); }
-  .hero p { margin: 4px 0; font-size: 1.1em; opacity: 0.95; text-shadow: 0 1px 6px rgba(0,0,0,0.4); }
-  .container { max-width: 820px; margin: 0 auto; padding: 0 16px 60px; }
-  .summary-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin-top: -30px;
-    margin-bottom: 40px;
-  }
-  .summary-card {
-    background: white;
-    border-radius: 14px;
-    padding: 20px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  }
-  .summary-card h3 { margin-top: 0; font-size: 1.05em; color: #1b6b6b; }
-  .summary-card p { margin: 6px 0; font-size: 0.92em; line-height: 1.5; }
-  .prebooked {
-    background: white;
-    border-radius: 14px;
-    padding: 20px 24px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    margin-bottom: 50px;
-  }
-  .prebooked h3 { color: #1b6b6b; margin-top: 0; }
-  .prebooked ul { margin: 8px 0 0; padding-left: 20px; font-size: 0.92em; line-height: 1.6; }
-  .day-card {
-    background: white;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.10);
-    margin-bottom: 34px;
-  }
-  .day-header {
-    padding: 34px 26px;
-    color: white;
-    position: relative;
-  }
-  .day-header .day-num { font-size: 0.95em; letter-spacing: 2px; text-transform: uppercase; opacity: 0.85; }
-  .day-header h2 { margin: 4px 0 2px; font-size: 1.8em; }
-  .day-header .theme { font-size: 1.05em; opacity: 0.95; }
-  .day-header .emoji { position: absolute; right: 24px; top: 50%; transform: translateY(-50%); font-size: 2.6em; opacity: 0.9; }
-  .day-body { padding: 22px 26px 8px; }
-  .slot { display: flex; gap: 14px; padding: 12px 0; border-bottom: 1px solid #f0eee9; }
-  .slot:last-child { border-bottom: none; }
-  .slot-label {
-    flex: 0 0 118px;
-    font-weight: 600;
-    font-size: 0.85em;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: #999;
-    padding-top: 2px;
-  }
-  .slot-text { flex: 1; font-size: 0.95em; line-height: 1.5; }
-  .slot-text b { color: #1b1b1b; }
-  .d1 { background: linear-gradient(135deg,#0f3d3e,#2fa39a); }
-  .d2 { background: linear-gradient(135deg,#b8562e,#e8975a); }
-  .d3 { background: linear-gradient(135deg,#3c6e33,#7cb257); }
-  .d4 { background: linear-gradient(135deg,#6a3b8c,#b06fd6); }
-  .d5 { background: linear-gradient(135deg,#a3221f,#e0623d); }
-  .d6 { background: linear-gradient(135deg,#8a5a12,#d9a441); }
-  .d7 { background: linear-gradient(135deg,#2b3a8c,#6a7fd6); }
-  .d8 { background: linear-gradient(135deg,#c4622c,#f0b24a 50%,#e2664f); }
-  footer { text-align: center; padding: 30px 16px 60px; color: #888; font-size: 0.85em; }
-  @media (max-width: 600px) {
-    .summary-grid { grid-template-columns: 1fr; }
-    .slot { flex-direction: column; gap: 4px; }
-    .slot-label { flex: none; }
-  }
-</style>
-</head>
-<body>
-
-<div class="hero">
-  <h1>Vietnam 2026</h1>
-  <p>Ho Chi Minh City · 31 October – 8 November 2026</p>
-</div>
-
-<div class="container">
-
-  <div class="summary-grid">
-    <div class="summary-card">
-      <h3>✈️ Flights</h3>
-      <p><b>SYD → SGN</b> — VN772, Economy<br>Dep Sydney T1 11:50, 31 Oct<br>Arr Tan Son Nhat T2 16:15, 31 Oct</p>
-      <p><b>SGN → SYD</b> — VN773, Economy<br>Dep Tan Son Nhat T2 21:15, 7 Nov<br>Arr Sydney T1 09:50, 8 Nov</p>
-    </div>
-    <div class="summary-card">
-      <h3>🏨 Hotel</h3>
-      <p><b>Mai House Saigon Hotel</b><br>Junior Suite · 1 room · 7 nights<br>31 Oct – 7 Nov 2026</p>
-      <p>Requested: quiet, higher floor, city view, away from lifts, non-smoking, king bed (not guaranteed)</p>
-    </div>
-  </div>
-
-  <div class="prebooked">
-    <h3>📌 Pre-booked with the Hotel</h3>
-    <ul>
-      <li>Birthday cake set up in room on arrival</li>
-      <li>Seafood Buffet Dinner — 31 Oct, 6:30 PM, 2 guests</li>
-      <li>Embrace Package Spa — 3 Nov, 10:00 AM, 2 guests (separate rooms, close together)</li>
-      <li>High Tea — 3 Nov, 3:00 PM, 2 guests</li>
-      <li>Airport transfer/fast-track declined — arranging own transport</li>
-    </ul>
-  </div>
-
-  <div class="day-card">
-    <div class="day-header d1">
-      <div class="day-num">Day 1 · Saturday</div>
-      <h2>31 October</h2>
-      <div class="theme">Arrival &amp; Birthday Surprise</div>
-      <div class="emoji">🎂✈️</div>
-    </div>
-    <div class="day-body">
-      <div class="slot"><div class="slot-label">Morning</div><div class="slot-text">VN772 departs Sydney 11:50.</div></div>
-      <div class="slot"><div class="slot-label">Mid-Morning</div><div class="slot-text">In flight to Ho Chi Minh City.</div></div>
-      <div class="slot"><div class="slot-label">Arrival</div><div class="slot-text">Land Tan Son Nhat 16:15, clear immigration, self-arranged transfer to <b>Mai House Saigon Hotel</b>.</div></div>
-      <div class="slot"><div class="slot-label">Afternoon</div><div class="slot-text">Check in, discover the birthday cake set up in the room, freshen up.</div></div>
-      <div class="slot"><div class="slot-label">Dinner</div><div class="slot-text"><b>Seafood Buffet Dinner</b> — confirmed 6:30 PM, 2 guests.</div></div>
-      <div class="slot"><div class="slot-label">Evening</div><div class="slot-text">Nightcap at the in-house <b>Mai Sky Rooftop Bar</b>, early night for jet lag.</div></div>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-header d2">
-      <div class="day-num">Day 2 · Sunday</div>
-      <h2>1 November</h2>
-      <div class="theme">Cathedral, Market &amp; Pizza</div>
-      <div class="emoji">⛪🛍️</div>
-    </div>
-    <div class="day-body">
-      <div class="slot"><div class="slot-label">Morning</div><div class="slot-text"><b>Notre Dame Cathedral of Saigon</b>.</div></div>
-      <div class="slot"><div class="slot-label">Mid-Morning</div><div class="slot-text">Wander into <b>Ben Thanh Market</b>.</div></div>
-      <div class="slot"><div class="slot-label">Lunch</div><div class="slot-text"><b>Bánh Mì Huynh Hoa – Lê Thị Riêng</b>.</div></div>
-      <div class="slot"><div class="slot-label">Afternoon</div><div class="slot-text">Shopping at <b>Sài Gòn Square</b>, coffee at <b>Katinat</b> (Phan Bội Châu).</div></div>
-      <div class="slot"><div class="slot-label">Dinner</div><div class="slot-text"><b>Pizza 4P's Ben Thanh</b>.</div></div>
-      <div class="slot"><div class="slot-label">Evening</div><div class="slot-text">Dessert at <b>Boulevard Gelato, Pastry &amp; Coffee</b>.</div></div>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-header d3">
-      <div class="day-num">Day 3 · Monday</div>
-      <h2>2 November</h2>
-      <div class="theme">Broken Rice &amp; Craft Saké</div>
-      <div class="emoji">🍚🍶</div>
-    </div>
-    <div class="day-body">
-      <div class="slot"><div class="slot-label">Morning</div><div class="slot-text"><b>Cơm Tấm Ba Ghiền</b> breakfast (Phú Nhuận).</div></div>
-      <div class="slot"><div class="slot-label">Mid-Morning</div><div class="slot-text">Browse <b>11 Garmentory</b>, same neighbourhood.</div></div>
-      <div class="slot"><div class="slot-label">Lunch</div><div class="slot-text"><b>SON – Bếp Nhà Đãi Khách | Viet Kitchen</b>.</div></div>
-      <div class="slot"><div class="slot-label">Afternoon</div><div class="slot-text">Matcha break at <b>Kocha Matcha Spot</b>.</div></div>
-      <div class="slot"><div class="slot-label">Dinner</div><div class="slot-text"><b>Bếp Mẹ Ỉn</b>.</div></div>
-      <div class="slot"><div class="slot-label">Evening</div><div class="slot-text"><b>Mùa Craft Saké</b> nightcap near the hotel.</div></div>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-header d4">
-      <div class="day-num">Day 4 · Tuesday</div>
-      <h2>3 November</h2>
-      <div class="theme">Spa &amp; High Tea Day</div>
-      <div class="emoji">💆‍♀️🍵</div>
-    </div>
-    <div class="day-body">
-      <div class="slot"><div class="slot-label">Morning</div><div class="slot-text">Relaxed breakfast at the hotel.</div></div>
-      <div class="slot"><div class="slot-label">Mid-Morning</div><div class="slot-text"><b>Embrace Package Spa</b> — confirmed 10:00 AM, 2 guests.</div></div>
-      <div class="slot"><div class="slot-label">Lunch</div><div class="slot-text"><b>Phở Hòa Pasteur</b>, easy unwind after the spa.</div></div>
-      <div class="slot"><div class="slot-label">Afternoon</div><div class="slot-text"><b>High Tea</b> — confirmed 3:00 PM, 2 guests.</div></div>
-      <div class="slot"><div class="slot-label">Dinner</div><div class="slot-text"><b>NÔM Dining</b> — multi-course tasting journey.</div></div>
-      <div class="slot"><div class="slot-label">Evening</div><div class="slot-text">Quiet night at the hotel.</div></div>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-header d5">
-      <div class="day-num">Day 5 · Wednesday</div>
-      <h2>4 November</h2>
-      <div class="theme">Crab Noodles &amp; Fine Dining</div>
-      <div class="emoji">🦀🍽️</div>
-    </div>
-    <div class="day-body">
-      <div class="slot"><div class="slot-label">Morning</div><div class="slot-text"><b>Bánh Canh Cua 14</b> (District 5 — budget travel time).</div></div>
-      <div class="slot"><div class="slot-label">Mid-Morning</div><div class="slot-text">Wander that area, or head back toward Tân Định.</div></div>
-      <div class="slot"><div class="slot-label">Lunch</div><div class="slot-text"><b>Bánh Xèo 46A</b>.</div></div>
-      <div class="slot"><div class="slot-label">Afternoon</div><div class="slot-text"><b>Highlands Coffee Lê Quý Đôn</b>.</div></div>
-      <div class="slot"><div class="slot-label">Dinner</div><div class="slot-text"><b>CoCo Dining</b>.</div></div>
-      <div class="slot"><div class="slot-label">Evening</div><div class="slot-text">Relax at the hotel.</div></div>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-header d6">
-      <div class="day-num">Day 6 · Thursday</div>
-      <h2>5 November</h2>
-      <div class="theme">Pho &amp; Street Eats</div>
-      <div class="emoji">🍜🥖</div>
-    </div>
-    <div class="day-body">
-      <div class="slot"><div class="slot-label">Morning</div><div class="slot-text"><b>Bún Bò Huế 31</b> — closes ~2 PM, breakfast-only stop.</div></div>
-      <div class="slot"><div class="slot-label">Mid-Morning</div><div class="slot-text"><b>Ốc Bắc 2</b> snails snack, or free time.</div></div>
-      <div class="slot"><div class="slot-label">Lunch</div><div class="slot-text"><b>Phở Việt Nam</b> (Phạm Hồng Thái).</div></div>
-      <div class="slot"><div class="slot-label">Afternoon</div><div class="slot-text"><b>Su Su Waterfall Fried Chicken</b> late bite.</div></div>
-      <div class="slot"><div class="slot-label">Dinner</div><div class="slot-text"><b>Bánh Mì Bà Huynh (Madam Win)</b>.</div></div>
-      <div class="slot"><div class="slot-label">Evening</div><div class="slot-text"><b>Jollibee Pasteur</b> if craving something familiar, or a laneway wander.</div></div>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-header d7">
-      <div class="day-num">Day 7 · Friday</div>
-      <h2>6 November</h2>
-      <div class="theme">Shopping &amp; Farewell Dinner</div>
-      <div class="emoji">🛍️🥂</div>
-    </div>
-    <div class="day-body">
-      <div class="slot"><div class="slot-label">Morning</div><div class="slot-text">Free time — pool, packing, or another pass through District 1.</div></div>
-      <div class="slot"><div class="slot-label">Mid-Morning</div><div class="slot-text">Final shopping at <b>Ben Thanh Market</b> / <b>Sài Gòn Square</b> for gifts.</div></div>
-      <div class="slot"><div class="slot-label">Lunch</div><div class="slot-text">Repeat whichever favourite you've loved most.</div></div>
-      <div class="slot"><div class="slot-label">Afternoon</div><div class="slot-text">Free time.</div></div>
-      <div class="slot"><div class="slot-label">Dinner</div><div class="slot-text">Special final dinner — revisit <b>NÔM</b> or <b>CoCo</b>, or a top favourite.</div></div>
-      <div class="slot"><div class="slot-label">Evening</div><div class="slot-text">Pack, farewell drink at the rooftop bar.</div></div>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-header d8">
-      <div class="day-num">Day 8 · Saturday</div>
-      <h2>7 November</h2>
-      <div class="theme">Bonus Day &amp; Departure</div>
-      <div class="emoji">🌅✈️</div>
-    </div>
-    <div class="day-body">
-      <div class="slot"><div class="slot-label">Morning</div><div class="slot-text">Breakfast at the hotel, check out by 12 PM (ask about storing luggage for the day).</div></div>
-      <div class="slot"><div class="slot-label">Mid-Morning</div><div class="slot-text">One last stroll through District 1 — a final coffee or matcha spot you haven't tried yet.</div></div>
-      <div class="slot"><div class="slot-label">Lunch</div><div class="slot-text">Your choice of a favourite spot for one last real meal.</div></div>
-      <div class="slot"><div class="slot-label">Afternoon</div><div class="slot-text">Relax by the pool (if day use is allowed) or a final round of shopping.</div></div>
-      <div class="slot"><div class="slot-label">Early Evening</div><div class="slot-text">Light dinner near the hotel, then head to Tan Son Nhat by ~18:00.</div></div>
-      <div class="slot"><div class="slot-label">Evening</div><div class="slot-text">VN773 departs HCMC 21:15, arriving Sydney 09:50, 8 Nov.</div></div>
-    </div>
-  </div>
-
-</div>
-<footer>Made for your Vietnam trip · 31 Oct – 8 Nov 2026 · Hero photo via Unsplash</footer>
-
-</body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Vietnam Trip 2026 Itinerary</title><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/><style>*{box-sizing:border-box}body{margin:0;font-family:system-ui,Helvetica,Arial,sans-serif;background:#f4f2ee;color:#2b2b2b}
+.hero{background:linear-gradient(rgba(10,30,30,0.45),rgba(10,30,30,0.55)),url(https://images.unsplash.com/photo-1521019795854-14e15f600980?w=1600&auto=format&fit=crop&q=80) center/cover no-repeat;color:#fff;padding:80px 20px 50px;text-align:center}
+.hero h1{margin:0 0 8px;font-size:2.4em;letter-spacing:.5px;text-shadow:0 2px 10px rgba(0,0,0,.4)}
+.hero p{margin:4px 0;font-size:1.1em;opacity:.95;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.container{max-width:820px;margin:0 auto;padding:0 16px 60px}
+.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:-30px;margin-bottom:40px}
+.summary-card{background:#fff;border-radius:14px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.summary-card h3{margin-top:0;font-size:1.05em;color:#1b6b6b}.summary-card p{margin:6px 0;font-size:.92em;line-height:1.5}
+.prebooked{background:#fff;border-radius:14px;padding:20px 24px;box-shadow:0 6px 18px rgba(0,0,0,.08);margin-bottom:50px}
+.prebooked h3{color:#1b6b6b;margin-top:0}.prebooked ul{margin:8px 0 0;padding-left:20px;font-size:.92em;line-height:1.6}
+.day-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.10);margin-bottom:34px}
+.day-header{padding:34px 26px;color:#fff;position:relative}
+.day-header .day-num{font-size:.95em;letter-spacing:2px;text-transform:uppercase;opacity:.85}
+.day-header h2{margin:4px 0 2px;font-size:1.8em}.day-header .theme{font-size:1.05em;opacity:.95}
+.day-header .emoji{position:absolute;right:24px;top:50%;transform:translateY(-50%);font-size:2.6em;opacity:.9}
+.day-body{padding:22px 26px 20px}
+.slot{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid #f0eee9}
+.slot-label{flex:0 0 118px;font-weight:600;font-size:.85em;text-transform:uppercase;letter-spacing:.5px;color:#999;padding-top:2px}
+.slot-text{flex:1;font-size:.95em;line-height:1.5}.slot-text b{color:#1b1b1b}
+.daymap{height:280px;border-radius:12px;margin:18px 0 10px;z-index:0}
+.maplink{display:inline-block;font-size:.85em;color:#1b6b6b;text-decoration:none;font-weight:600}.maplink:hover{text-decoration:underline}
+.marker-badge{background:#1b6b6b;color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4)}
+.d1{background:linear-gradient(135deg,#0f3d3e,#2fa39a)}.d2{background:linear-gradient(135deg,#b8562e,#e8975a)}.d3{background:linear-gradient(135deg,#3c6e33,#7cb257)}.d4{background:linear-gradient(135deg,#6a3b8c,#b06fd6)}.d5{background:linear-gradient(135deg,#a3221f,#e0623d)}.d6{background:linear-gradient(135deg,#8a5a12,#d9a441)}.d7{background:linear-gradient(135deg,#2b3a8c,#6a7fd6)}.d8{background:linear-gradient(135deg,#c4622c,#f0b24a 50%,#e2664f)}
+footer{text-align:center;padding:30px 16px 60px;color:#888;font-size:.85em}
+@media(max-width:600px){.summary-grid{grid-template-columns:1fr}.slot{flex-direction:column;gap:4px}.slot-label{flex:none}}</style></head><body><div class="hero"><h1>Vietnam 2026 🇻🇳</h1><p>Ho Chi Minh City · 31 October – 8 November 2026</p><p>Vietnam Airlines VN772 / VN773 · Mai House Saigon Hotel</p></div><div class="container"><div class="summary-grid"><div class="summary-card"><h3>✈️ Flights</h3><p><b>SYD → SGN</b> — VN772, Economy<br>Dep Sydney T1 11:50, 31 Oct<br>Arr Tan Son Nhat T2 16:15, 31 Oct</p><p><b>SGN → SYD</b> — VN773, Economy<br>Dep Tan Son Nhat T2 21:15, 7 Nov<br>Arr Sydney T1 09:50, 8 Nov</p></div><div class="summary-card"><h3>🏨 Hotel</h3><p><b>Mai House Saigon Hotel</b><br>Junior Suite · 1 room · 7 nights<br>31 Oct – 7 Nov 2026</p><p>Requested: quiet, higher floor, city view, away from lifts, non-smoking, king bed (not guaranteed)</p></div></div><div class="prebooked"><h3>📌 Pre-booked with the Hotel</h3><ul><li>Birthday cake set up in room on arrival</li><li>Seafood Buffet Dinner — 31 Oct, 6:30 PM, 2 guests</li><li>Embrace Package Spa — 3 Nov, 10:00 AM, 2 guests (separate rooms, close together)</li><li>High Tea — 3 Nov, 3:00 PM, 2 guests</li><li>Airport transfer/fast-track declined — arranging own transport</li></ul></div><div class="day-card"><div class="day-header d1"><div class="day-num">Day 1 · Saturday</div><h2>31 October</h2><div class="theme">Arrival & Birthday Surprise</div><div class="emoji">🎂✈️</div></div><div class="day-body"><div class="slot"><div class="slot-label">Morning</div><div class="slot-text">VN772 departs Sydney 11:50.</div></div><div class="slot"><div class="slot-label">Mid-Morning</div><div class="slot-text">In flight to Ho Chi Minh City.</div></div><div class="slot"><div class="slot-label">Arrival</div><div class="slot-text">Land Tan Son Nhat 16:15, clear immigration, self-arranged transfer to <b>Mai House Saigon Hotel</b>.</div></div><div class="slot"><div class="slot-label">Afternoon</div><div class="slot-text">Check in, discover the birthday cake set up in the room, freshen up.</div></div><div class="slot"><div class="slot-label">Dinner</div><div class="slot-text"><b>Seafood Buffet Dinner</b> — confirmed 6:30 PM, 2 guests.</div></div><div class="slot"><div class="slot-label">Evening</div><div class="slot-text">Nightcap at the in-house <b>Mai Sky Rooftop Bar</b>, early night for jet lag.</div></div><div id="map1" class="daymap"></div><a class="maplink" id="dir1" target="_blank" rel="noopener">🗺️ Open Day 1 route in Google Maps (with distances) →</a></div></div><div class="day-card"><div class="day-header d2"><div class="day-num">Day 2 · Sunday</div><h2>1 November</h2><div class="theme">Cathedral, Market & Pizza</div><div class="emoji">⛪🛍️</div></div><div class="day-body"><div class="slot"><div class="slot-label">Morning</div><div class="slot-text"><b>Notre Dame Cathedral of Saigon</b>.</div></div><div class="slot"><div class="slot-label">Mid-Morning</div><div class="slot-text">Wander into <b>Ben Thanh Market</b>.</div></div><div class="slot"><div class="slot-label">Lunch</div><div class="slot-text"><b>Bánh Mì Huynh Hoa – Lê Thị Riêng</b>.</div></div><div class="slot"><div class="slot-label">Afternoon</div><div class="slot-text">Shopping at <b>Sài Gòn Square</b>, coffee at <b>Katinat</b> (Phan Bội Châu).</div></div><div class="slot"><div class="slot-label">Dinner</div><div class="slot-text"><b>Pizza 4P’s Ben Thanh</b>.</div></div><div class="slot"><div class="slot-label">Evening</div><div class="slot-text">Dessert at <b>Boulevard Gelato, Pastry & Coffee</b>.</div></div><div id="map2" class="daymap"></div><a class="maplink" id="dir2" target="_blank" rel="noopener">🗺️ Open Day 2 route in Google Maps (with distances) →</a></div></div><div class="day-card"><div class="day-header d3"><div class="day-num">Day 3 · Monday</div><h2>2 November</h2><div class="theme">Broken Rice & Craft Saké</div><div class="emoji">🍚🍶</div></div><div class="day-body"><div class="slot"><div class="slot-label">Morning</div><div class="slot-text"><b>Cơm Tấm Ba Ghiền</b> breakfast (Phú Nhuận).</div></div><div class="slot"><div class="slot-label">Mid-Morning</div><div class="slot-text">Browse <b>11 Garmentory</b>, same neighbourhood.</div></div><div class="slot"><div class="slot-label">Lunch</div><div class="slot-text"><b>SON – Bếp Nhà Đãi Khách | Viet Kitchen</b>.</div></div><div class="slot"><div class="slot-label">Afternoon</div><div class="slot-text">Matcha break at <b>Kocha Matcha Spot</b>.</div></div><div class="slot"><div class="slot-label">Dinner</div><div class="slot-text"><b>Bếp Mẹ Ỉn</b>.</div></div><div class="slot"><div class="slot-label">Evening</div><div class="slot-text"><b>Mùa Craft Saké</b> nightcap near the hotel.</div></div><div id="map3" class="daymap"></div><a class="maplink" id="dir3" target="_blank" rel="noopener">🗺️ Open Day 3 route in Google Maps (with distances) →</a></div></div><div class="day-card"><div class="day-header d4"><div class="day-num">Day 4 · Tuesday</div><h2>3 November</h2><div class="theme">Spa & High Tea Day</div><div class="emoji">💆‍♀️🍵</div></div><div class="day-body"><div class="slot"><div class="slot-label">Morning</div><div class="slot-text">Relaxed breakfast at the hotel.</div></div><div class="slot"><div class="slot-label">Mid-Morning</div><div class="slot-text"><b>Embrace Package Spa</b> — confirmed 10:00 AM, 2 guests.</div></div><div class="slot"><div class="slot-label">Lunch</div><div class="slot-text"><b>Phở Hòa Pasteur</b>, easy unwind after the spa.</div></div><div class="slot"><div class="slot-label">Afternoon</div><div class="slot-text"><b>High Tea</b> — confirmed 3:00 PM, 2 guests.</div></div><div class="slot"><div class="slot-label">Dinner</div><div class="slot-text"><b>NÔM Dining</b> — multi-course tasting journey.</div></div><div class="slot"><div class="slot-label">Evening</div><div class="slot-text">Quiet night at the hotel.</div></div><div id="map4" class="daymap"></div><a class="maplink" id="dir4" target="_blank" rel="noopener">🗺️ Open Day 4 route in Google Maps (with distances) →</a></div></div><div class="day-card"><div class="day-header d5"><div class="day-num">Day 5 · Wednesday</div><h2>4 November</h2><div class="theme">Crab Noodles & Fine Dining</div><div class="emoji">🦀🍽️</div></div><div class="day-body"><div class="slot"><div class="slot-label">Morning</div><div class="slot-text"><b>Bánh Canh Cua 14</b> (District 5 — budget travel time).</div></div><div class="slot"><div class="slot-label">Mid-Morning</div><div class="slot-text">Head back toward Tân Định.</div></div><div class="slot"><div class="slot-label">Lunch</div><div class="slot-text"><b>Bánh Xèo 46A</b> (Tân Định).</div></div><div class="slot"><div class="slot-label">Afternoon</div><div class="slot-text"><b>Spice Canvas Atelier</b> dessert counter (Tân Định) &nbsp;·&nbsp; or coffee at <b>Highlands Coffee Lê Quý Đôn</b>.</div></div><div class="slot"><div class="slot-label">Dinner</div><div class="slot-text"><b>CoCo Dining</b>.</div></div><div class="slot"><div class="slot-label">Evening</div><div class="slot-text">Relax at the hotel.</div></div><div id="map5" class="daymap"></div><a class="maplink" id="dir5" target="_blank" rel="noopener">🗺️ Open Day 5 route in Google Maps (with distances) →</a></div></div><div class="day-card"><div class="day-header d6"><div class="day-num">Day 6 · Thursday</div><h2>5 November</h2><div class="theme">Pho & Street Eats</div><div class="emoji">🍜🥖</div></div><div class="day-body"><div class="slot"><div class="slot-label">Morning</div><div class="slot-text"><b>Bún Bò Huế 31</b> — closes ~2 PM, breakfast-only stop.</div></div><div class="slot"><div class="slot-label">Mid-Morning</div><div class="slot-text"><b>Ốc Bắc 2</b> snails snack, or free time.</div></div><div class="slot"><div class="slot-label">Lunch</div><div class="slot-text"><b>Phở Việt Nam</b> (Phạm Hồng Thái).</div></div><div class="slot"><div class="slot-label">Afternoon</div><div class="slot-text"><b>Su Su Waterfall Fried Chicken</b> late bite.</div></div><div class="slot"><div class="slot-label">Dinner</div><div class="slot-text"><b>Bánh Mì Bà Huynh (Madam Win)</b>.</div></div><div class="slot"><div class="slot-label">Evening</div><div class="slot-text"><b>Jollibee Pasteur</b> if craving something familiar, or a laneway wander.</div></div><div id="map6" class="daymap"></div><a class="maplink" id="dir6" target="_blank" rel="noopener">🗺️ Open Day 6 route in Google Maps (with distances) →</a></div></div><div class="day-card"><div class="day-header d7"><div class="day-num">Day 7 · Friday</div><h2>6 November</h2><div class="theme">Shopping & Farewell Dinner</div><div class="emoji">🛍️🥂</div></div><div class="day-body"><div class="slot"><div class="slot-label">Morning</div><div class="slot-text">Free time — pool, packing, or another pass through District 1.</div></div><div class="slot"><div class="slot-label">Mid-Morning</div><div class="slot-text">Final shopping at <b>Ben Thanh Market</b> / <b>Sài Gòn Square</b> for gifts.</div></div><div class="slot"><div class="slot-label">Lunch</div><div class="slot-text"><b>Mặn Mòi, Tao Đàn</b> — homey authentic Vietnamese.</div></div><div class="slot"><div class="slot-label">Afternoon</div><div class="slot-text">Free time / relax.</div></div><div class="slot"><div class="slot-label">Dinner</div><div class="slot-text"><b>AKUNA Restaurant</b> — riverside fine dining at Le Méridien (Level 9) for a special farewell.</div></div><div class="slot"><div class="slot-label">Evening</div><div class="slot-text">Pack, farewell drink at the rooftop bar.</div></div><div id="map7" class="daymap"></div><a class="maplink" id="dir7" target="_blank" rel="noopener">🗺️ Open Day 7 route in Google Maps (with distances) →</a></div></div><div class="day-card"><div class="day-header d8"><div class="day-num">Day 8 · Saturday</div><h2>7 November</h2><div class="theme">Bonus Day & Departure</div><div class="emoji">🌅✈️</div></div><div class="day-body"><div class="slot"><div class="slot-label">Morning</div><div class="slot-text">Breakfast at the hotel, check out by 12 PM (ask about storing luggage for the day).</div></div><div class="slot"><div class="slot-label">Mid-Morning</div><div class="slot-text">One last stroll through District 1 — a final coffee or matcha spot you haven’t tried yet.</div></div><div class="slot"><div class="slot-label">Lunch</div><div class="slot-text">Your choice of a favourite spot for one last real meal.</div></div><div class="slot"><div class="slot-label">Afternoon</div><div class="slot-text">Relax by the pool (if day use is allowed) or a final round of shopping at <b>Ben Thanh Market</b>.</div></div><div class="slot"><div class="slot-label">Early Evening</div><div class="slot-text">Light dinner near the hotel, then head to Tan Son Nhat by ~18:00.</div></div><div class="slot"><div class="slot-label">Evening</div><div class="slot-text">VN773 departs HCMC 21:15, arriving Sydney 09:50, 8 Nov.</div></div><div id="map8" class="daymap"></div><a class="maplink" id="dir8" target="_blank" rel="noopener">🗺️ Open Day 8 route in Google Maps (with distances) →</a></div></div></div><footer>Made for your Vietnam trip · 31 Oct – 8 Nov 2026 · Hero photo via Unsplash · Maps © OpenStreetMap contributors</footer><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>var P={"hotel":[10.78192,106.69158,"Mai House Saigon Hotel"],"airport":[10.81798,106.65626,"Tan Son Nhat Airport"],"benthanh":[10.77253,106.69804,"Ben Thanh Market"],"notredame":[10.77977,106.69904,"Notre Dame Cathedral"],"banhmihuynhhoa":[10.7698,106.6913,"Banh Mi Huynh Hoa"],"saigonsquare":[10.7735,106.6975,"Sai Gon Square"],"katinat":[10.7715,106.6975,"Katinat"],"pizza4ps":[10.77444,106.69665,"Pizza 4P's Ben Thanh"],"boulevard":[10.77345,106.70299,"Boulevard Gelato"],"comtam":[10.79218,106.66785,"Com Tam Ba Ghien"],"garmentory":[10.79561,106.67555,"11 Garmentory"],"son":[10.77446,106.69859,"SON - Bep Nha Dai Khach"],"kocha":[10.7862,106.6952,"Kocha Matcha Spot"],"bepmein":[10.77225,106.69623,"Bep Me In"],"mua":[10.783,106.686,"Mua Craft Sake"],"phohoa":[10.7865,106.6895,"Pho Hoa Pasteur"],"nom":[10.79405,106.68963,"NOM Dining"],"banhcanhcua":[10.7595,106.68017,"Banh Canh Cua 14"],"banhxeo":[10.78968,106.69149,"Banh Xeo 46A"],"highlands":[10.783,106.687,"Highlands Coffee Le Quy Don"],"coco":[10.784,106.6905,"CoCo Dining"],"bunbohue":[10.789,106.701,"Bun Bo Hue 31"],"ocbac":[10.7768,106.7005,"Oc Bac 2"],"phovietnam":[10.7705,106.693,"Pho Viet Nam"],"susu":[10.76832,106.68479,"Su Su Waterfall Fried Chicken"],"banhmibahuynh":[10.76631,106.68825,"Banh Mi Ba Huynh (Madam Win)"],"jollibee":[10.7845,106.6915,"Jollibee Pasteur"],"manmoi":[10.78,106.693,"Man Moi Tao Dan"],"spicecanvas":[10.79,106.691,"Spice Canvas Atelier"],"akuna":[10.77994,106.70731,"AKUNA Restaurant"]};var DAYS={"1":["airport","hotel"],"2":["notredame","benthanh","banhmihuynhhoa","saigonsquare","katinat","pizza4ps","boulevard"],"3":["comtam","garmentory","son","kocha","bepmein","mua"],"4":["hotel","phohoa","nom"],"5":["banhcanhcua","banhxeo","spicecanvas","highlands","coco"],"6":["bunbohue","ocbac","phovietnam","susu","banhmibahuynh","jollibee"],"7":["benthanh","saigonsquare","manmoi","akuna"],"8":["hotel","benthanh","airport"]};
+function initMaps(){for(var n in DAYS){(function(n){
+var keys=DAYS[n];var pts=keys.map(function(k){return P[k];}).filter(Boolean);
+var map=L.map("map"+n,{scrollWheelZoom:false});
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:"© OpenStreetMap contributors"}).addTo(map);
+var group=[];
+pts.forEach(function(p,i){
+  var icon=L.divIcon({className:"",html:"<div class='marker-badge'>"+(i+1)+"</div>",iconSize:[26,26],iconAnchor:[13,13]});
+  L.marker([p[0],p[1]],{icon:icon}).addTo(map).bindPopup((i+1)+". "+p[2]);
+  group.push([p[0],p[1]]);
+});
+if(group.length>1){map.fitBounds(group,{padding:[35,35]});}else if(group.length===1){map.setView(group[0],14);}
+var dl=keys.map(function(k){return encodeURIComponent(P[k][2]+", Ho Chi Minh City");}).join("/");
+var a=document.getElementById("dir"+n); if(a){a.href="https://www.google.com/maps/dir/"+dl;}
+})(n);}}
+if(window.L){initMaps();}else{document.addEventListener("DOMContentLoaded",function(){setTimeout(initMaps,300);});}</script></body></html>
